@@ -13,25 +13,54 @@ After each win/loss need a counter
 $(document).ready(function(){
 var wins = 0;
 var losses = 0;
-var diamond = 0;
-var ruby = 0;
-var sapphire = 0;
-var emerald = 0;
-var compStore = 0;
+var text_value = "";
+// function intialize(comp){
+// 	comp = Math.floor(Math.random() * 102) + 19;
+// 	console.log(comp);
+// }
 
-function intialize(comp){
-	comp = Math.floor(Math.random() * 102) + 19;
-	console.log(comp);
-}
+// intialize(compStore);
 
-intialize(compStore);
+// function crystal(){
+// 	diamond = Math.floor(Math.random() * 6) + 3;
+// 	console.log(diamond);
+// }
 
-function crystal(user){
-	user = Math.floor(Math.random() * 6) + 3;
-	console.log(user);
-}
+//Stores the computer number in compStore
+var compStore = Math.floor(Math.random() * 102) + 19;
+//Displays the random number
 
-crystal(ruby);
+$("#com-number").html(compStore);
+
+
+var ruby = Math.floor(Math.random() * 5) + 3;
+var diamond = Math.floor(Math.random() * 4) + 3;
+var sapphire = Math.floor(Math.random() * 6) + 3;
+var emerald = Math.floor(Math.random() * 7) + 3;
+
+console.log(diamond, ruby, emerald, sapphire);//testing purposes
+
+
+$(".diamond").on("click", function(crystal){
+	$(".your-total").html(diamond);
+	var text_value = $("#value").text();
+	console.log(this.text_value);
+});
+
+$(".ruby").on("click", function(){
+	$(".your-total").html(ruby);
+
+});
+
+$(".emerald").on("click", function(){
+	$(".your-total").html(emerald);
+
+});
+
+$(".sapphire").on("click", function(){
+	$(".your-total").html(sapphire);
+
+});
 
 
 
