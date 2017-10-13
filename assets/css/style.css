@@ -1,0 +1,40 @@
+/*=====================Menu===================*/
+ul.menu {
+    list-style: none;
+}
+
+ul.menu li {
+    float: left;
+    padding: 10px;
+}
+/*=====================Content====================*/
+
+
+
+/*Gemstones*/
+.gemstones img{
+	max-width: 50px;
+}
+
+.col-md-7.gem-center .gemstones {
+	text-align: center;
+}
+
+.col-md-7.gem-center .gemstones img {
+    margin: 10px;
+}
+/*End of Gemstones*/
+
+/*Scoreboard*/
+.col-md-7.computer-score {
+    background: #00adff;
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+}
+
+.col-md-4.win-loss {
+    background: green;
+    color: #fff;
+    padding: 20px;
+}
