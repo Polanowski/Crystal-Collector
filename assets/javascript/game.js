@@ -20,9 +20,6 @@ var score = 0;
 var compStore = Math.floor(Math.random() * 102) + 19; //
 //Displays the random number
 
-
-
-
 var ruby = Math.floor(Math.random() * 5) + 3;
 var diamond = Math.floor(Math.random() * 4) + 3;
 var sapphire = Math.floor(Math.random() * 6) + 3;
@@ -53,7 +50,7 @@ var reset = function(){
 }
 
 
-console.log(diamond, ruby, emerald, sapphire);//testing purposes
+//console.log(diamond, ruby, emerald, sapphire);//testing purposes
 var game = function (){
 	//evualting if the score is equal to the displayed number
 	if (score === compStore) {
