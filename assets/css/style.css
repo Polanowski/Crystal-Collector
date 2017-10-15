@@ -8,9 +8,24 @@ ul.menu li {
     padding: 10px;
 }
 /*=====================Content====================*/
+body {
+    background: url(../images/background.jpg);
+}
 
+.jumbotron.jumbotron-fluid {
+    opacity: 0.5;
+}
 
+h1 {
+    text-align: center;
+}
 
+/*Instructions styling*/
+.instructions {
+    background: rgba(255,255,255,0.7);
+    padding: 20px;
+}
+/*End of insturctions styling*/
 /*Gemstones*/
 .gemstones img{
 	max-width: 50px;
@@ -26,6 +41,8 @@ ul.menu li {
 /*End of Gemstones*/
 
 /*Scoreboard*/
+
+
 .col-md-7.computer-score {
     background: #00adff;
     text-align: center;
@@ -37,4 +54,9 @@ ul.menu li {
     background: green;
     color: #fff;
     padding: 20px;
+}
+
+.col-md-4.total-box {
+    background: #2ae0f6;
+    text-align: center;
 }

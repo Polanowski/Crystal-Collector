@@ -12,29 +12,22 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 </head>
 <body>
-	<header>
-		<nav class="navbar navbar-default navbar-static-top">
-			<div class="container">
-				<ul class="menu">
-					<li>Home</li>
-					<li>Games</li>
-				</ul>
-				
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">	
+			<div class="row">
+				<h1 class="rubberBand animated">Crystal Collector</h1>
 			</div>
-		</nav>
-	</header>
-	<div class="container">
-		<div class="row">
-			<h1>Crystal Collector</h1>
 		</div>
+	</div>
+	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
 				<div class="instructions">
 					<p>You will be given a random number at the start of the game.</p>
 					<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
-					<p class="gemstones"><img src="assets/images/diamond.png"><img src="assets/images/ruby.png"><img src="assets/images/emerald.png"><img src="assets/images/sapphire.png"></p>
 					<p>You win the game by matching your total score to the random number, you loss the game if your total score goes above the random number.</p>
 					<p>The value of each crystal is hidden from you until click on it</p>
 					<p>Each time when the game starts, the game will change the value of each crystal.</p>
@@ -43,14 +36,14 @@
 			<div class="col-md-6">
 				<div class="game">
 					<div class="col-md-7 computer-score">
-						<h2 id="com-number">32</h2>
+						<h2 id="com-number"></h2>
 					</div>
 					<div class="col-md-1 computer-score">
 					</div>
 					<div class="col-md-4 win-loss">
 						<p class="status"></p>
-						<p class="win">Wins: </p>
-						<p class="loss">Losses: </p>
+						<p>Wins: <span class="win"></span></p>
+						<p>Losses: <span class="loss"></span></p>
 					</div>
 					<div class="col-md-7 gem-center">
 						<p class="gemstones"><img src="assets/images/diamond.png" class="diamond"><img src="assets/images/ruby.png" class="ruby"><img src="assets/images/emerald.png" class="emerald"><img src="assets/images/sapphire.png" class="sapphire"></p>
